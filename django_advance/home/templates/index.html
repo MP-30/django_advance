@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+    {% block start %}
+        <h1> Hello Client</h1>
+        <p> Hi how are who? </p>
+        <br>
+            {{names}}
+        <br>
+            {%for name in names%}
+                {% if not name == "Ram" %}
+                    <h4>{{name}}</h4>
+                    <br>
+                {% endif %}
+            {% endfor %}
+        <br>
+
+        <a href="/contact/"> Contact </a>
+    {% endblock %}
+
+        
